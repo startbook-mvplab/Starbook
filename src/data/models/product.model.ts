@@ -1,4 +1,4 @@
-import { DonwloadCertificateEnum } from '@/utilities/enums/donwload_certifcate.enum';
+import { DonwloadCertificateEnum } from "@/presentation/utilities"
 
 export interface IProduct {
 
