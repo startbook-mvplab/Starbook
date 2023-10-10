@@ -1,0 +1,1 @@
+export { default as SectoresInteresAcademia } from './SectoresInteresAcademia';
