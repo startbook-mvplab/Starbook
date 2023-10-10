@@ -1,0 +1,1 @@
+export { default as InformacionGeneral } from './InformaciónGeneral';

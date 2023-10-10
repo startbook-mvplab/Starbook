@@ -1,0 +1,1 @@
+export { default as InformationCardsCorporativo } from './InformationCardsCorporativo';

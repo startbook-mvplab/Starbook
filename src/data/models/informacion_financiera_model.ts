@@ -1,0 +1,16 @@
+export interface IInformacionFinanciera {
+    // _id: string,
+    // startup_id: string,
+    fecha: Date,
+    ingresos: number,
+    costos: number,
+    clientes: number,
+    burn_rate: number,
+    facturacion: number,
+    ventas: number,
+    mrr: number,
+    // updatedAt: string,
+    mercado_potencial: number,
+    presupuesto_marketing: number,
+    profit: number,
+}
