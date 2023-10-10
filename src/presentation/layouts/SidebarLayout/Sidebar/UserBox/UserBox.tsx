@@ -59,9 +59,10 @@ const UserBoxDescription = styled(Typography)(
 `
 );
 
+const userRepository = new UserRepository();
+
 function UserBox() {
 
-	const userRepository = new UserRepository();
 
 	const [user, setUser] = useState<IUser>({
 		firstName: '',
@@ -81,7 +82,7 @@ function UserBox() {
 
 		setFullName(`${user.firstName} ${user.lastName}`);
 
-	}, []);
+	}, [user.firstName, user.lastName]);
 
 	const ref = useRef<any>(null);
 	const [isOpen, setOpen] = useState<boolean>(false);

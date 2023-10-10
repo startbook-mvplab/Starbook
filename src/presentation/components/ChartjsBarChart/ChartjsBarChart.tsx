@@ -86,22 +86,22 @@ const ChartjsBarChart = (props: BarProp) => {
     ]
   }
 
-  const CustomInput = forwardRef(({ ...props }: any, ref) => {
-    const startDate = props.start !== null ? format(props.start, 'MM/dd/yyyy') : ''
-    const endDate = props.end !== null ? ` - ${format(props.end, 'MM/dd/yyyy')}` : null
+  // const CustomInput = forwardRef(({ ...props }: any, ref) => {
+  //   const startDate = props.start !== null ? format(props.start, 'MM/dd/yyyy') : ''
+  //   const endDate = props.end !== null ? ` - ${format(props.end, 'MM/dd/yyyy')}` : null
 
-    const value = `${startDate}${endDate !== null ? endDate : ''}`
+  //   const value = `${startDate}${endDate !== null ? endDate : ''}`
 
-    return (
-      <TextField
-        {...props}
-        size='small'
-        value={value}
-        inputRef={ref}
+  //   return (
+  //     <TextField
+  //       {...props}
+  //       size='small'
+  //       value={value}
+  //       inputRef={ref}
         
-      />
-    )
-  })
+  //     />
+  //   )
+  // })
 
   const handleOnChange = (dates: any) => {
     const [start, end] = dates
